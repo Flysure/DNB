@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html >
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- topmost of head JavaScripts - Page -->
+    <link rel="canonical" href="site-survey.html"/>		        
+	<title>Provide Website Feedback - D&B </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="description" content=""/>
+    <meta property="og:title" content="Provide Website Feedback" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://www.dnb.com[Ljava.lang.String;@71317f71.html" />
+<meta property="og:url" content="http://www.dnb.com/site-survey.html" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@dnbus" />
+<meta name="twitter:creator" content="@dnbus" />
+<meta name="twitter:image" property="og:image" content="http://www.dnb.com[Ljava.lang.String;@71317f71.html" />
+<link rel="stylesheet" href="etc/designs/dnb/dnb-mod/clientlibs/styles.min.css" type="text/css"/>
+<link rel="stylesheet" href="etc/designs/dnb/dnb-mod/clientlibs/pages/contentpage.min.css" type="text/css"/>
+<style>
+
+/* scene7 issue disorting height */
+.content_card img {
+	height:auto;
+}
+.large_cards img, .image.large img {
+	height:auto;
+}
+
+/* prevent footer titles from reacting to hover */
+@media screen and (min-width: 992px) {
+footer .title a:hover {color: #868686; cursor: default}
+}
+
+/* site config shims for nested navigation code release 10/21 */
+.mobile nav .submenu a {
+	border-bottom: 1px solid rgba(11,95,127,0.5);
+}
+
+@media screen and (min-width: 992px){
+	/* fix for IE background-size issue */
+	nav .submenu a.category {
+		background-size: 0.975em 1.5em;
+	}
+}
+.contact_cta {height: 70px}
+
+.contact_cta .cta .form {
+  line-height: 2em;
+}
+
+/* fix for crowded top-level links */
+@media screen and (min-width: 1200px){
+    nav .menu > div > ul > li {
+        margin-right: 4%;
+    }
+}
+
+/* underline for changed nav DOM structure  */
+nav .menu > div > ul > li.open > a {
+    box-shadow: inset 0 -2px 0 #005172;
+}
+
+#searchResults{
+    position: absolute;
+    overflow-x: hidden;
+    z-index: 5;
+    max-height: 225px;
+    margin: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 100%;
+    background: white;
+    /* I have using negative margin, but this will be a bandaid for now. */
+    /* TODO: Write it so this doesn't need negative margin */
+    margin-top: -20px;
+}
+
+#searchResults .typeahead-suggestion:hover {
+    background-color: #F0F0F0;
+}
+
+/* temp override to product_login css - 10/9 */
+@media screen and (max-width: 991px){
+.mobile nav .menu .login, .mobile .product_login .menu .login, .mobile nav .menu .close, .mobile .product_login .menu .close,  .mobile nav .menu .toggle_button, .mobile .product_login .menu .toggle_button {display: block}
+}
+
+/*Temporary fix to correct spacing issue on START A LIVE CHAT cta*/
+.contact_cta .cta .chat a#chatBtn-Other,
+.contact_cta .cta .contact-method a {
+  letter-spacing: .06em;
+}
+
+/* START - Temporary contact-bar with chat for mobile until new contact bar is implemented */
+.cta-half {
+	width: 50%!important;
+}
+.mobile .contact_cta .cta {
+	overflow-y: hidden;
+	max-height: 57px;
+}
+.mobile .contact_cta .cta .container,
+.mobile .contact_cta .cta .container > .row {
+	max-height: 57px;
+}
+.mobile .contact_cta .cta .contact-method > a {
+	border-top: 0;
+}
+.mobile .contact_cta .cta .call {
+	width: 50%;
+	line-height: 3.7em;
+}
+.mobile .contact_cta .cta .call a {
+	font-size: 1.2em;
+}
+.mobile .contact_cta .cta .icon {
+	margin-top: 6px;
+}
+.mobile .contact_cta .cta .call .icon {
+	display: none;
+}
+.mobile .contact_cta .cta .form .icon {
+ background-position: -34px -231px;
+}
+.mobile .contact_cta .cta .form {
+	width: 25%;
+	border-right: 1px solid #ffffff;
+}
+.mobile .contact_cta .cta .form .mobile,
+.mobile .contact_cta .cta .chat .mobile {
+  font-size: .69em;
+  display: block;
+}
+.mobile .contact_cta .cta .mobile {
+	line-height: 2;
+}
+.mobile .contact_cta .cta .chat {
+	width: 25%;
+	display:block;
+}
+.mobile .contact_cta .cta a {
+	padding: 0;
+}
+.mobile .contact-method.chat #chatBtn-Other {
+	filter: brightness(0) invert(1);
+	-webkit-filter: brightness(0) invert(1);
+}
+.mobile .contact_cta .cta .chat a#chatBtn-Other .icon {
+	background-size: 85% 85%;
+	height: 30px;
+}
+
+@media screen and (min-width: 992px) {
+	.contact_cta .cta .chat .mobile {
+		display: none;
+	}
+}
+/* END - Temporary contact-bar with chat for mobile until new contact bar is implemented in Dec/Jan release */
+
+/* temp fix for small globe icon */
+.international_site_selector_mobile_button .icon.globe {height: 1.8em; width: 1.8em}
+
+/* temporary fix for ios 11 form bug */
+.content-fixed {
+	position: fixed;
+}
+
+/* temp fix for separating nav style and functions */
+nav .menu > div > ul > li.open > a {box-shadow: none;}
+nav .menu > div > ul > li:hover > a {box-shadow: inset 0 -2px 0 #005172;}
+</style>
+<!-- top of head JavaScripts - Site -->
+    <!-- For Bing verification -->
+<meta name="msvalidate.01" content="36A20ED6A34F6F0BAEEF7B1A68985B3E" />
+
+<!-- For Bing verification -->
+<meta name="msvalidate.01" content="36A20ED6A34F6F0BAEEF7B1A68985B3E" />
+
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '1471']);
+    _elqQ.push(['elqUseFirstPartyCookie', 'http://www.dnb.com']);
+    _elqQ.push(['elqTrackPageView']);
+    _elqQ.push(['elqSetSiteId', '566']);
+    _elqQ.push(['elqUseFirstPartyCookie', 'https://www.dnb.co.uk']);
+    _elqQ.push(['elqTrackPageView']);
+    
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = '//img04.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load); 
+    })();
+</script>
+<!-- top of head DTM callJavaScripts - Page -->
+    <script type="text/javascript">
+    var contentID = window.location;
+    var digitalData={
+        page: {
+            pageInfo: {
+                pageName: 'Provide Website Feedback',
+                pageURL: '',
+                event: '',  
+                pageTitle: 'Provide Website Feedback',
+                contentType: 'page',
+                contentID: '/content/dnb-us/en/home/site-survey', 
+                eloquaScoringTags: '',
+                segment: '',
+            },  
+			clientContext: {
+				DUNSNumber: 'Unmatched Visitor',
+				ultimateDuns: 'Unmatched Visitor',
+				domesticDUNSNumber: 'Unmatched Visitor',
+				companyName: 'Unmatched Visitor',
+				annualSales: 'Unmatched Visitor',
+				employeeCount: 'Unmatched Visitor',
+				SICCode: 'Unmatched Visitor',
+				location: 'Unmatched Visitor',
+				seniority: 'Unmatched Visitor',
+				functionalArea: 'Unmatched Visitor',
+				industry: 'Unmatched Visitor',
+				companySize: 'Unmatched Visitor',
+				employeesAtLocation: 'Unmatched Visitor',
+				employeesAtAllLocation: 'Unmatched Visitor',
+				companyAddress: 'Unmatched Visitor',
+				companyZip: 'Unmatched Visitor',
+				walletSize: 'Unmatched Visitor',
+				ITExpense: 'Unmatched Visitor',
+				delinquencyRate: 'Unmatched Visitor',
+				jobFunction: 'Unmatched Visitor',
+				jobSeniority: 'Unmatched Visitor',
+				howTheyPay: 'Unmatched Visitor',
+				marketability: 'Unmatched Visitor',
+				vanityTitle: 'Unmatched Visitor'
+			}
+        }
+    }
+    </script>
+
+    <script type="text/javascript">
+        if(DNB === undefined) {
+            var DNB = {};
+        } 
+        var phoneNumber = '(800) 526-9018';
+        DNB.phonenumber = phoneNumber; 
+    </script>
+
+    <script type="text/javascript" src="etc/designs/dnb/dnb-mod/clientlibs/headlibs.min.js"></script>
+<!-- top of head DTM call - Site -->
+        <script type="text/javascript">
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if(c.indexOf(nameEQ) == 0) {
+            return c.substring(nameEQ.length, c.length);
+        }
+    }
+    return null;
+}
+
+
+</script>
+<!-- bottom of head JavaScripts - Site -->
+    <script>
+// Site - Bottom of Head - JS
+</script>
+
+<script type="text/javascript" src="etc/clientlibs/granite/jquery.min.js"></script>
+
+<script>
+	function targetPageParams() {
+		var w_cookie=readCookie("w_annualSalesNum");
+		if (w_cookie) {
+			return {
+				"profile": {
+					"annualSalesNum": readCookie('w_annualSalesNum'),
+					"companyName": readCookie('w_companyName'),
+					"companySize": readCookie('w_companySize'),
+					"companyZip": readCookie('w_companyZip'),
+					"industry": readCookie('w_industry'),
+					"jobFunction": readCookie('w_jobFunction'),
+					"jobSeniority": readCookie('w_jobSeniority'),
+					"AEMurl": digitalData.page.pageInfo.contentID
+				}
+			  };
+		} else {
+			return {
+				"profile": {
+					"AEMurl": digitalData.page.pageInfo.contentID
+				}
+			  };
+		} 
+	}
+</script>
+
+<script type="text/javascript">
+		 	var HID_cookie=readCookie("HID");
+		 	if (HID_cookie)
+		 	{ }
+		 	else
+		 	{
+		 		var today = new Date();
+			 	var cookie_value=today.getTime();		
+		 		createCookie("HID",cookie_value,30);
+		 		HID_cookie=readCookie("HID");
+		 	}	 	
+</script>
+
+<script>
+    var GTMID = 'GTM-J6PG';
+</script>
+
+<script src="http://assets.adobedtm.com/1e94e5aad30fe5c5d79558a70f53b530c558d0d9/satelliteLib-33440d6e69a882dab18465afac83920e9a1a1c6a.js"></script><!-- bottom of head JavaScripts - Page -->
+    <link href="etc/designs/dnb/dnb-mod/images/apple-touch-icon-57.png" rel="apple-touch-icon">
+    <link href="etc/designs/dnb/dnb-mod/images/apple-touch-icon-76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="etc/designs/dnb/dnb-mod/images/apple-touch-icon-120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="etc/designs/dnb/dnb-mod/images/apple-touch-icon-152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="etc/designs/dnb/dnb-mod/images/apple-touch-icon-180.png" rel="apple-touch-icon" sizes="180x180">
+
+    <link href="etc/designs/dnb/dnb-mod/images/favicon-16.png" rel="icon" type="image/png"/>
+    <link href="etc/designs/dnb/dnb-mod/images/favicon.ico" rel="icon" type="image/png"/>
+    
+</head>
+<body>
+
+    <div id="page">
+        <div id="content">
+
+	<div class="content-par parsys"><div class="parbase html section"><iframe width="898" height="540" scrolling="auto" src="https://insights.co1.qualtrics.com/SE/?SID=SV_eXu4J0SPtxYfpNX"></iframe></div>
+
+</div>
+</div>
+</div>
+    </body>
+</html>

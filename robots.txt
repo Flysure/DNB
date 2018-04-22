@@ -1,0 +1,178 @@
+# robots.txt for https://www/dnb.com/
+User-agent: * 
+# match any robot name
+
+Disallow: /coremetrics/ 
+#do not allow access to core metrics pages
+
+Disallow: /c-online/
+#do not allow access to c-online pages
+
+Disallow: /decisionmaker/ 
+#do not allow access to dm pages
+
+Disallow: /dnb/ 
+#do not allow access to old home directory
+
+Disallow: /ebir/ 
+#do not allow access to ebir pages
+
+Disallow: /errors/ 
+#do not allow access to error messages pages
+
+Disallow: /images/ 
+#do not allow access to images
+
+Disallow: /includes/ 
+#do not allow access to includes pages
+
+Disallow: /misc/ 
+#do not allow access to miscellaneous pages
+
+Disallow: /Nmr/ 
+#do not allow access to risk activity report fabrication directory
+
+Disallow: /partners/ 
+#do not allow access to Bill Mekeels mirror pages
+
+Disallow: /products/contract  
+#do not allow access to custom contract pages
+
+Disallow: /products/partners/  
+#do not allow access to third party pages
+
+Disallow: /product/blueprint/ 
+#do not allow access to invitation directory
+
+Disallow: /product/canada/ 
+#do not allow access to canada pages
+
+Disallow: /product/c-online/ 
+#do not allow access to c-online pages
+
+Disallow: /product/contract/*.htm 
+#do not allow access to contract access pages
+
+Disallow: /product/contract/*.asp 
+#do not allow access to contract access pages
+
+Disallow: /product/decisionmakerapp/ 
+#do not allow access to dm pages
+
+Disallow: /product/dlw/ 
+#do not allow access to contract access pages
+
+Disallow: /product/dlwimages/ 
+#do not allow access to contract access images
+
+Disallow: /product/ebir/ 
+#do not allow access to all ebir directories
+
+Disallow: /product/globalsignin/ 
+#do not allow access to singlesign on pages
+
+Disallow: /product/gws_components/ 
+#do not allow access to gws pages
+
+Disallow: /product/new_features/ 
+#do not allow access to contract access pages
+
+Disallow: /product/retail/ 
+#do not allow access to old  retail access pages
+
+Disallow: /product/style/
+#do not allow access to css pages
+
+Disallow: /product/stylesheets/ 
+#do not allow access to css pages
+
+Disallow: /product/tour/tour1*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tour2*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tour3*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tour4*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tour5*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tour6*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tour7*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/toura*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tourc*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/toure*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tourg*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tourh*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/tourp*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/touru*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/tour/e*.htm
+#do not allow access to tour pages
+
+Disallow: /product/tour/h*.htm
+#do not allow access to tour pages
+
+Disallow: /product/tour/l*.htm
+#do not allow access to tour pages
+
+Disallow: /product/tour/m* 
+#do not allow access to tour pages
+
+Disallow: /product/tour/s*.htm 
+#do not allow access to tour pages
+
+Disallow: /product/update/ 
+#do not allow access to contract access pages
+
+Disallow: /product/usml/ 
+#do not allow access to usml pages
+
+Disallow: /product/verisign/ 
+#do not allow access to verisign pages
+
+Disallow: /product/wbll/
+#do not allow access to wbll pages
+
+Disallow: /promo/ 
+#do not allow access to promo and banner ad pages
+
+Disallow: /Sbri/ 
+#do not allow access to small busines risk fabrication directory
+
+Disallow: /scripts/
+#do not allow access to scripts
+
+Disallow: /subInfo/ 
+#do not allow access to contract related directory
+
+Disallow: /templates/ 
+#do not allow access to design template pages
+
+Disallow: /test/ 
+#do not allow access to test area
+
+Disallow: /unspsc/ 
+#do not allow access to directory
+
